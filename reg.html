@@ -1,0 +1,67 @@
+<!--Perform validation of all fields in assignment no.1 by using JavaScript-->
+<!DOCTYPE html>
+<html>
+    <!--Invisible Part-->
+    <head>
+        <title>Student Registration Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <!--Visible Part-->
+    <body>
+        <h1>Registration Form</h1>
+        <hr>
+        <div class="container">
+            <form name="stdreg" action="welcome.html">
+                <div class="row">
+                    <div class="col-20"><label>Username:</label></div>
+                    <div class="col-80"><input type="text" name="uname" placeholder="Enter your username"></div>
+                </div>
+                <div class="row">
+                    <div class="col-20"><label>Password:</label></div>
+                    <div class="col-80"><input type="password" name="upwd" placeholder="Enter your password"></div>
+                </div>
+                <div class="row">
+                    <div class="col-20"><label>Confirm Password:</label></div>
+                    <div class="col-80"><input type="password" name="cupwd" placeholder="Enter your password"></div>
+                </div>
+                <div class="row">
+                    <div class="col-20"><label>Firstname:</label></div>
+                    <div class="col-80"><input type="text" name="fname" placeholder="Enter your firstname"></div>
+                </div>
+                <div class="row">
+                    <div class="col-20"><label>Lastname:</label></div>
+                    <div class="col-80"><input type="text" name="lname" placeholder="Enter your lastname"></div>
+                </div>
+                <div class="row">
+                    <div class="col-20"><label>Gender:</label></div>
+                    <div class="col-80">                        
+                        <input type="radio" name="gender" value="Male">Male
+                        <input type="radio" name="gender" value="Female">Female
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div class="col-20"><label>Email:</label></div>
+                    <div class="col-80"><input type="text" name="uemail" placeholder="Enter your email id"></div>
+                </div>
+                <div class="row">
+                    <div class="col-20"><label>Course:</label></div>
+                    <div class="col-80"><select name="ucourse">
+                        <option>Select Class</option>
+                        <option>SE COMP</option>
+                        <option>TE COMP</option>
+                        <option>BE COMP</option>
+                        </select></div>
+                </div><br>
+                <div class="row">
+                    <div class="col-20"><label>Mobile No.:</label></div>
+                    <div class="col-80"><input type="text" name="umno" placeholder="Enter your mobile number"></div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Submit" onclick="return validate();" class="registerbtn">
+                    <input type="reset" value="Reset"class="registerbtn">
+                </div>
+            </form>
+        </div>
+    </body>
+    <script src="validation.js"></script>
+</html>
